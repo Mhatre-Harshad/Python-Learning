@@ -1,5 +1,3 @@
-# Python-Learning
-My Python learning journey - includes codes, notes, and small projects.
 # Python Learning Journey
 
 This repository contains my Python learning exercises, notes, and small projects.
