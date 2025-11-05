@@ -1,5 +1,5 @@
 # Variables in Python
-"""A variable in Python is a named container used to store data values
+"""A variable in Python is a container used to store data values
  that can change during program execution."""
 # Integer variable
 age = 21
