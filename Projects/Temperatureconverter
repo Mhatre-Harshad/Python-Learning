@@ -1,0 +1,23 @@
+#Temperature Conversion
+
+print("###############################################")
+print("             TEMPERATURE CONVERTER            ")
+print("###############################################")
+print("Choose desired conversion option from below:")
+print("1 Celsius To Fahrenheit")
+print("2 Fahrenheit To Celsius")
+print("----------------------------------------------")
+
+ch = input("Enter your choice:- ")
+
+if ch == "1":
+    c = float(input("\nEnter temperature in Celsius: "))
+    f = (c*9/5)+ 32  # fahrenheit conversion formula
+    print(f"Temperature in Fahrenheit = {f}"+"°F")
+elif ch == "2":
+    f = float(input("\nEnter temperature in Fahrenheit: "))
+    c = (f-32)* 5/9 # celsius conversion formula
+    print(f"Temperature in Celsius = {c}"+"°C")
+else:
+    print("Invalid option")
+    print("Try Again...")
