@@ -83,7 +83,9 @@ print("After insert:", fruits)
 """The extend() method in Python is used to add multiple elements from an iterable
  (such as another list) to the end of a list """
 print("Before extend:", fruits)
-fruits.extend("Kiwi","Pineapple")
+list2=["Kiwi","Pineapple"]
+print("list adding in fruits",list2)
+fruits.extend(list2)
 print("After extend:",fruits)
 # -------------------------------------------------------------------------------------
 # Removing Items
@@ -96,7 +98,7 @@ print("\n Removing Items :")
 # -------------------------------------------------------
 # 1 using remove() method:
 # -------------------------------------------------------
-fruits = ["apple", "banana", "mango", "Kiwi"]
+fruits = ["apple", "banana", "mango", "kiwi"]
 print("Before remove:", fruits)
 fruits.remove("kiwi")          # Removes a specific value
 print("After remove:", fruits)
@@ -130,14 +132,6 @@ print("Before clear():",fruits)
 fruits.clear()
 print("After clear():",fruits)
 # -------------------------------------------------------------------------------------
-# List Functions
-print("\nList Functions:")
-print("Length of numbers:", len(numbers))
-print("Max number:", max(numbers))
-print("Min number:", min(numbers))
-print("Sum of numbers:", sum(numbers))
-
-# -------------------------------------------------------------------------------------
 # Looping Through a List
 # -------------------------------------------------------------------------------------
 """Looping through list items in Python refers to iterating over each element within a list.
@@ -164,8 +158,8 @@ for i in range(len(fruits)):
 # 3 Loop using enumerate() → gives index + value
 # -------------------------------------------------------
 print("\nUsing enumerate():")
-for index, fruit in enumerate(fruits):
-    print(index, ":", fruit)
+for i, fruit in enumerate(fruits):
+    print(i, ":", fruit)
 
 # -------------------------------------------------------
 # 4 Loop through list and modify items (uppercase example)
